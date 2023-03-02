@@ -1,0 +1,103 @@
+.bg-grey {
+  background-color: #e2e3e4;
+}
+#overview .row {
+  margin: 0;
+}
+/* banner */
+#banner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+.banner-img {
+  height: 70vh;
+  width: 100%;
+  filter: brightness(50%);
+}
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.name h1 {
+  padding-bottom: 10px;
+}
+.avatar {
+  border: 1px solid #e2e3e4;
+  border-radius: 50%;
+  transform: scale(8);
+}
+/* target and information */
+#target {
+  padding: 50px 100px;
+}
+#personal-info {
+  padding: 50px 100px;
+  background-color: #d2d2d3;
+}
+.mt-40-icon {
+  color: #15aabf;
+}
+/* job-info */
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+  gap: 40px;
+}
+.column {
+  border: 1px solid #495057;
+  padding: 18px;
+}
+.column-2 {
+  break-inside: avoid;
+}
+/* job info english and skill */
+.point {
+  height: 3px;
+  width: 45px;
+  display: inline-block;
+}
+.blue {
+  background-color: #15aabf;
+}
+.grey {
+  background-color: #495057;
+}
+/* link */
+nav a {
+  text-transform: uppercase;
+}
+/* list */
+ul {
+  list-style: none;
+}
+.big-list:before {
+  content: "\2022";
+  color: #15aabf;
+  font-weight: bold;
+  width: 1em;
+  margin-left: -1em;
+  position: absolute;
+}
+/* certificate */
+#certificate .box {
+  border-bottom: 1px solid #83341e;
+}
+.box-2 {
+  border-left: 1px solid #83341e;
+}
+/* project */
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.year {
+  margin-left: 20px;
+  margin-right: 20px;
+}

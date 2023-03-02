@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0d6efd;
+  font-family: sans-serif;
+}
+h1 {
+  color: #1864ab;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #495057;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.box {
+  padding: 20px;
+  border: 5px solid #e9ecef;
+  background-color: #e9ecef;
+}
+.row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding: 20px 0;
+}
+.content {
+  margin: 20px 0;
+}
+.goal-icon,
+.team-icon,
+.primary-icon {
+  height: 24px;
+  width: 24px;
+  justify-self: center;
+  align-self: center;
+}
+.first {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+/* goals */
+.goals {
+  margin-top: 40px;
+  margin-left: 40px;
+  grid-column: 1/3;
+}
+.goals .row {
+  border-bottom: 1px solid #adb5bd;
+}
+
+/* team */
+.teams {
+  margin-top: 40px;
+}
+.team-icon {
+  fill: #000;
+}
+/* timeline */
+.timeline {
+  margin: 40px 40px 40px 0;
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.description {
+  border-bottom: 1px #adb5bd dashed;
+  padding-bottom: 20px;
+}
+/* scopes */
+.scopes {
+  margin-left: 40px;
+  margin-bottom: 40px;
+  grid-column: 1/3;
+}
+.scope-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.scopes .first {
+  padding-bottom: 18px;
+  font-size: 20px;
+}
+/* primary */
+.primary {
+  margin-bottom: 40px;
+}
+.primary-icon {
+  fill: #000;
+  color: #fff;
+  height: 36px;
+  width: 36px;
+}
+.number {
+  justify-self: center;
+  align-self: center;
+  border: 1px solid #495057;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: #9775fa;
+  color: #fff;
+}
+/* Media query */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .box {
+    margin: 40px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .scope-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .number {
+    align-self: flex-start;
+  }
+}

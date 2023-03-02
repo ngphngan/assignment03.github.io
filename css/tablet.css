@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  .avatar {
+    display: none;
+  }
+  .bg-grey {
+    padding: 0;
+  }
+  .bg-grey .container {
+    padding: 0;
+    margin: auto;
+  }
+  /* job-info */
+  .information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  /*target and information  */
+
+  /* certificate */
+  #certificate .d-flex {
+    flex-direction: column;
+  }
+  /* project */
+  .project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .year {
+    padding: 0.25rem 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
